@@ -1,0 +1,46 @@
+
+Selenium Class 3
+
+Why do we need Xpath and CSS Selector?
+-developers may not provide all the locators in html.
+-by using  xpath and css  we can identify elements with any given attributes
+
+What is an Xpath?
+-xpath is like a query language which helps us to identify elements
+uniquely on the web page
+
+Types of Xpath:
+Absolute Xpath -> starts from the starting node of the html
+                    it always starts with single slash (/)
+                    e.g /html/body/div/div/div
+
+Relative Xpath ->  starts from any node in html
+                    it always starts with double slash (//)
+
+Syntax for relative xpath:
+//tagname[@attribute = '']
+
+e.g.  //input[@id = 'email']
+
+Identifying elements by its text:
+//tagname[text() = 'text value']
+
+e.g.  //a[text() = 'Create new account']
+//h2[text() = 'Facebook helps you connect and share with the people in your life.']
+
+identifying elements by using contains method:
+//tagname[contains(@attribute, 'partial attribute value')]
+
+e.g.  //input[contains(@placeholder, 'Email')]
+//h2[contains(text(), 'the world')]
+
+starts-with will identify elements by its partial starting value
+//tagname[starts-with(@attribute, 'partial starting attribute value')]
+
+e.g. //input[starts-with(@aria-label, 'Email')]
+
+Advanced Xpath:
+is based on parent and child, sibling relationship
+
+identifying element by following sibling
+//tagname[@attribute = 'attribute value']/ following - sibling:: tagname

@@ -1,0 +1,18 @@
+Types of Web Tables:
+
+1.Static webtables
+2.Dynamic  webtables
+
+WebTables consist of different sections or parts:
+<table>
+    <thead>
+        <tr>
+            <th></th> -- column data or heading data
+        </tr>
+    <thead>
+    <tbody>
+         <tr>
+            <td></td> -- table data
+         </tr>
+    </tbody>
+<table>
